@@ -1,7 +1,7 @@
 package com.hxqzzxk.sort;
 
 /**
- * 插入排序双指针优化版本 InsertionSort3 的测试类，继承自 SortTest
+ * 插入排序双指针优化版本 InsertionSortBinarySearch 的测试类，继承自 SortTest
  */
 public class InsertionSortBinarySearchTest extends SortTest {
     /**

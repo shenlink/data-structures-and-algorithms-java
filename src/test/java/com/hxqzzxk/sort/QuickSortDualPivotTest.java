@@ -1,10 +1,12 @@
 package com.hxqzzxk.sort;
 
 /**
- * 快速排序三路划分版本 QuickSort2 的测试类，继承自 SortTest
+ * 快速排序三路划分版本 QuickSortDualPivot 的测试类，继承自 SortTest
  */
 public class QuickSortDualPivotTest extends SortTest {
-    // 排序测试数据规模，默认为一百万个元素
+    /**
+     * 排序测试数据规模
+     */
     protected int size = 1000000;
 
     /**

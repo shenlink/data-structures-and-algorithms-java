@@ -3,6 +3,8 @@ package com.hxqzzxk.sort;
 /**
  * 选择排序实现类
  * 每轮将最大的元素放在最后
+ * 
+ * @param <E> 元素类型，必须实现 Comparable 接口
  */
 public class SelectionSort<E extends Comparable<E>> extends Sort<E> {
     /**

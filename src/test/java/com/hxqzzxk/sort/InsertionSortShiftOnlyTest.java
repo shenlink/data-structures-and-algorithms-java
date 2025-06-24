@@ -1,7 +1,7 @@
 package com.hxqzzxk.sort;
 
 /**
- * 插入排序优化版本 InsertionSort2 的测试类，继承自 SortTest
+ * 插入排序优化版本 InsertionSortShiftOnly 的测试类，继承自 SortTest
  */
 public class InsertionSortShiftOnlyTest extends SortTest {
     /**

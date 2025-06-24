@@ -3,6 +3,8 @@ package com.hxqzzxk.sort;
 /**
  * 冒泡排序优化版
  * 通过提前终止有序序列减少不必要的比较次数
+ *
+ * @param <E> 元素类型，必须实现 Comparable 接口
  */
 public class BubbleSortEarlyStop<E extends Comparable<E>> extends Sort<E> {
     /**

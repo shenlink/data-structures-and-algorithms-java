@@ -4,6 +4,8 @@ package com.hxqzzxk.sort;
  * 快速排序优化版实现类
  * 基于分治策略进行排序，采用双路快速排序算法，避免极端情况下的性能退化。
  * 时间复杂度平均为 O(n log n)，最差情况下为 O(n^2)，空间复杂度为 O(log n)。
+ *
+ * @param <E> 元素类型，必须实现 Comparable 接口
  */
 public class QuickSortDualPivot<E extends Comparable<E>> extends Sort<E> {
     /**
