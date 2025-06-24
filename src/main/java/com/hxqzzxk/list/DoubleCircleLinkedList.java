@@ -2,12 +2,13 @@ package com.hxqzzxk.list;
 
 /**
  * 双向循环链表实现
+ *
  * @param <E> 元素类型
  */
 public class DoubleCircleLinkedList<E> extends AbstractDoubleLinkedList<E> {
     /**
      * 在指定位置插入一个元素
-     * 
+     *
      * @param index   插入位置，必须在 [0, size()] 范围内
      * @param element 要插入的元素
      */
@@ -61,7 +62,7 @@ public class DoubleCircleLinkedList<E> extends AbstractDoubleLinkedList<E> {
 
     /**
      * 删除指定位置的元素
-     * 
+     *
      * @param index 要删除的位置，必须在 [0, size()) 范围内
      * @return 被删除的元素
      */

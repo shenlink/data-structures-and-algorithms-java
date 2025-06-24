@@ -314,13 +314,13 @@ public class CircleDequeTest {
                 "null]", deque.toString());
         deque.enQueueRear(1);
         Assert.assertEquals("size: 1, elements: [1], capacity: 10, origin: " +
-                "[1, null, null, null, null, null, null, null, null, " +
-                "null]",
+                        "[1, null, null, null, null, null, null, null, null, " +
+                        "null]",
                 deque.toString());
         deque.enQueueRear(2);
         Assert.assertEquals("size: 2, elements: [1, 2], capacity: 10, origin:" +
-                " [1, 2, null, null, null, null, null, null, null, " +
-                "null]",
+                        " [1, 2, null, null, null, null, null, null, null, " +
+                        "null]",
                 deque.toString());
         for (int i = 3; i < 15; i++) {
             deque.enQueueRear(i);

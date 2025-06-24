@@ -8,7 +8,7 @@ package com.hxqzzxk.sort;
 public class RadixSort extends Sort<Integer> {
     /**
      * 对数组进行基数排序。
-     * 
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 找出数组中的最大值以确定排序轮数；
      * 2. 每一轮对个位、十位、百位等依次进行排序；
@@ -33,7 +33,7 @@ public class RadixSort extends Sort<Integer> {
 
     /**
      * 对指定的位数进行计数排序。
-     * 
+     *
      * @param divider 当前排序的位数因子（如 1, 10, 100 等）
      */
     private void countingSort(int divider) {

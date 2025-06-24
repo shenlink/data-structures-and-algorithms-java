@@ -8,7 +8,7 @@ public class BubbleSortEarlyStop<E extends Comparable<E>> extends Sort<E> {
     /**
      * 对数组进行排序，采用优化冒泡排序算法。
      * 每一轮遍历中，如果未发生交换，说明数组已有序，可提前结束排序。
-     * 
+     * <p>
      * 排序逻辑：
      * - 控制循环轮数（n - 1 轮）
      * - 每一轮从索引 1 开始比较相邻元素，若顺序错误则交换位置

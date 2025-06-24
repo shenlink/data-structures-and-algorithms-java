@@ -15,7 +15,7 @@ public class HeapSort<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对数组进行堆排序的具体逻辑。
-     * 
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 构建最大堆：从最后一个非叶子节点开始，依次向上执行下滤操作；
      * 2. 交换堆顶和堆底元素，并减少堆大小；
@@ -44,7 +44,7 @@ public class HeapSort<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对指定索引位置的节点执行下滤操作，以维护最大堆的性质。
-     * 
+     *
      * @param index 要下滤的节点索引
      */
     private void siftDown(int index) {

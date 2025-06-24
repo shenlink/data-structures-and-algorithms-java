@@ -27,7 +27,7 @@ public class MergeSort<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对指定范围内的数组进行归并排序。
-     *
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 如果当前范围小于两个元素，无需排序；
      * 2. 将数组分为左右两部分，分别递归排序；
@@ -50,7 +50,7 @@ public class MergeSort<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 归并操作，将两个有序子数组合并成一个有序数组。
-     *
+     * <p>
      * 合并过程分为以下几个步骤：
      * 1. 复制左边的数组到临时数组中；
      * 2. 依次比较左右两个子数组的元素，将较小的元素放入原数组；

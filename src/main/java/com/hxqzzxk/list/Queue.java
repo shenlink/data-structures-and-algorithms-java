@@ -2,7 +2,7 @@ package com.hxqzzxk.list;
 
 /**
  * 普通队列实现，使用双向链表作为底层存储结构
- * 
+ *
  * @param <E> 元素类型
  */
 public class Queue<E> {
@@ -13,7 +13,7 @@ public class Queue<E> {
 
     /**
      * 入队操作
-     * 
+     *
      * @param element 要入队的元素
      */
     public void enQueue(E element) {
@@ -22,7 +22,7 @@ public class Queue<E> {
 
     /**
      * 出队操作
-     * 
+     *
      * @return 队头元素
      */
     public E deQueue() {
@@ -31,7 +31,7 @@ public class Queue<E> {
 
     /**
      * 获取队头元素
-     * 
+     *
      * @return 队头元素
      */
     public E front() {
@@ -47,7 +47,7 @@ public class Queue<E> {
 
     /**
      * 获取队列中的元素数量
-     * 
+     *
      * @return 元素数量
      */
     public int size() {
@@ -56,7 +56,7 @@ public class Queue<E> {
 
     /**
      * 检查队列是否为空
-     * 
+     *
      * @return 如果队列为空则返回 true
      */
     public boolean isEmpty() {

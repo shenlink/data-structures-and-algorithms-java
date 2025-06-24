@@ -17,7 +17,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 构造函数
-     * 
+     *
      * @param capacity 初始容量
      */
     public ArrayList(int capacity) {
@@ -47,7 +47,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 获取指定索引的元素
-     * 
+     *
      * @param index 要获取的元素索引，必须在 [0, size()) 范围内
      * @return 位于指定索引处的元素
      */
@@ -59,8 +59,8 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 修改指定索引的元素，返回索引之前的元素
-     * 
-     * @param index 要替换的索引，必须在 [0, size()) 范围内
+     *
+     * @param index   要替换的索引，必须在 [0, size()) 范围内
      * @param element 新元素
      * @return 被替换的旧元素
      */
@@ -74,8 +74,8 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 添加元素到指定索引
-     * 
-     * @param index 插入索引，必须在 [0, size()] 范围内
+     *
+     * @param index   插入索引，必须在 [0, size()] 范围内
      * @param element 要插入的元素
      */
     @Override
@@ -104,7 +104,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 删除指定索引的元素，返回索引之前的元素
-     * 
+     *
      * @param index 要删除的索引，必须在 [0, size()) 范围内
      * @return 被删除的元素
      */
@@ -135,7 +135,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 获取指定元素的索引，如果是null，返回第一个是null的元素的索引
-     * 
+     *
      * @param element 要查找的元素
      * @return 元素首次出现的索引索引，如果未找到则返回 -1
      */
@@ -159,7 +159,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 确认是数组容量是否满足
-     * 
+     *
      * @param capacity 需要确认的容量
      * @return 如果当前容量大于等于需要的容量返回 true
      */
@@ -169,7 +169,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 扩容，数组容量不够，扩容加大容量到原始容量的1.5倍
-     * 
+     *
      * @param capacity 需要的最小容量
      */
     private void expansion(int capacity) {
@@ -208,7 +208,7 @@ public class ArrayList<E> extends AbstractList<E> {
 
     /**
      * 返回动态数组的字符串表示
-     * 
+     *
      * @return 表示动态数组内容的字符串
      */
     @Override

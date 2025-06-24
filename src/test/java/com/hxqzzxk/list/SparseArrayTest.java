@@ -153,9 +153,9 @@ public class SparseArrayTest {
     @Test
     public void testToSparseArrayFormat() {
         int[][] expected = {
-                { ROWS, COLS, 2 },
-                { 0, 0, 1 },
-                { 1, 1, 2 }
+                {ROWS, COLS, 2},
+                {0, 0, 1},
+                {1, 1, 2}
         };
 
         sparseArray.put(0, 0, 1);
@@ -177,9 +177,9 @@ public class SparseArrayTest {
     @Test
     public void testFromSparseArrayFormat() {
         int[][] input = {
-                { 3, 3, 2 },
-                { 0, 0, 10 },
-                { 2, 2, 20 }
+                {3, 3, 2},
+                {0, 0, 10},
+                {2, 2, 20}
         };
 
         sparseArray.fromSparseArrayFormat(input);

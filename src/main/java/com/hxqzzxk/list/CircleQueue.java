@@ -3,7 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 循环队列实现
  * 使用循环数组实现高效的队列操作
- * 
+ *
  * @param <E> 元素类型
  */
 public class CircleQueue<E> extends AbstractCircleQueue<E> {
@@ -16,7 +16,7 @@ public class CircleQueue<E> extends AbstractCircleQueue<E> {
 
     /**
      * 带容量参数的构造函数
-     * 
+     *
      * @param capacity 初始容量
      */
     @SuppressWarnings("unchecked")
@@ -28,7 +28,7 @@ public class CircleQueue<E> extends AbstractCircleQueue<E> {
 
     /**
      * 入队操作
-     * 
+     *
      * @param element 要入队的元素
      */
     public void enQueue(E element) {
@@ -39,7 +39,7 @@ public class CircleQueue<E> extends AbstractCircleQueue<E> {
 
     /**
      * 出队操作
-     * 
+     *
      * @return 队头元素
      */
     public E deQueue() {
@@ -55,7 +55,7 @@ public class CircleQueue<E> extends AbstractCircleQueue<E> {
 
     /**
      * 计算循环数组中的真实索引值
-     * 
+     *
      * @param index 相对索引
      * @return 循环数组中的实际索引
      */

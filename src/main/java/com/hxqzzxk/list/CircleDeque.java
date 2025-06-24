@@ -3,7 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 循环双端队列实现
  * 使用循环数组实现高效的双端队列操作
- * 
+ *
  * @param <E> 元素类型
  */
 public class CircleDeque<E> extends AbstractCircleQueue<E> {
@@ -16,7 +16,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 带容量参数的构造函数
-     * 
+     *
      * @param capacity 初始容量
      */
     @SuppressWarnings("unchecked")
@@ -28,7 +28,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 从队列尾部入队
-     * 
+     *
      * @param element 要入队的元素
      */
     public void enQueueRear(E element) {
@@ -40,7 +40,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 从队列的头部出队
-     * 
+     *
      * @return 队头元素
      */
     public E deQueueFront() {
@@ -57,7 +57,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 从队列头部入队
-     * 
+     *
      * @param element 要入队的元素
      */
     public void enQueueFront(E element) {
@@ -72,7 +72,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 从队列尾部出队
-     * 
+     *
      * @return 队尾元素
      */
     public E deQueueRear() {
@@ -88,7 +88,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 获取队尾元素
-     * 
+     *
      * @return 队尾元素
      */
     public E rear() {
@@ -97,7 +97,7 @@ public class CircleDeque<E> extends AbstractCircleQueue<E> {
 
     /**
      * 计算循环数组中的真实索引值
-     * 
+     *
      * @param index 相对索引
      * @return 循环数组中的实际索引
      */

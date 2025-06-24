@@ -3,7 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 跳表实现
  * 提供了基于跳表的数据存储结构
- * 
+ *
  * @param <K> 键类型，必须实现Comparable接口
  * @param <V> 值类型
  */
@@ -36,7 +36,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 跳表节点类
-     * 
+     *
      * @param <K> 节点键的类型
      * @param <V> 节点值的类型
      */
@@ -58,7 +58,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
         /**
          * 创建一个新的跳表节点
-         * 
+         *
          * @param key   节点的键
          * @param value 节点的值
          * @param level 节点的层数
@@ -89,7 +89,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 获取跳表中存储的元素数量
-     * 
+     *
      * @return 元素数量
      */
     public int size() {
@@ -98,7 +98,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 检查跳表是否为空
-     * 
+     *
      * @return 如果跳表没有元素则返回 true
      */
     public boolean isEmpty() {
@@ -107,7 +107,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 根据键获取对应的值
-     * 
+     *
      * @param key 要查找的键
      * @return 对应的值，如果不存在则返回 null
      * @throws IllegalArgumentException 如果键为 null
@@ -146,7 +146,7 @@ public class SkipList<K extends Comparable<K>, V> {
     /**
      * 添加或更新跳表节点
      * 如果键已存在则覆盖值，否则插入新节点
-     * 
+     *
      * @param key   要添加的键
      * @param value 要添加的值
      * @return 如果键已存在返回旧值，否则返回 null
@@ -221,7 +221,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 删除指定键的节点
-     * 
+     *
      * @param key 要删除的键
      * @return 被删除节点的值，如果键不存在则返回 null
      * @throws IllegalArgumentException 如果键为 null
@@ -276,7 +276,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 比较两个键的大小
-     * 
+     *
      * @param k1 第一个键
      * @param k2 第二个键
      * @return 比较结果
@@ -287,7 +287,7 @@ public class SkipList<K extends Comparable<K>, V> {
 
     /**
      * 生成随机的层数
-     * 
+     *
      * @return 随机生成的层数
      */
     private int randomLevel() {

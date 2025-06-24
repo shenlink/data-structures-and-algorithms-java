@@ -3,7 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 抽象的循环队列实现
  * 提供了循环队列的基本操作和通用功能
- * 
+ *
  * @param <E> 元素类型
  */
 public abstract class AbstractCircleQueue<E> {
@@ -40,7 +40,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 获取队列中的元素数量
-     * 
+     *
      * @return 元素个数
      */
     public int size() {
@@ -49,7 +49,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 检查队列是否为空
-     * 
+     *
      * @return 如果队列没有元素则返回 true
      */
     public boolean isEmpty() {
@@ -58,7 +58,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 获取队头元素
-     * 
+     *
      * @return 队头元素
      */
     public E front() {
@@ -67,7 +67,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 计算元素在底层数组中的实际索引
-     * 
+     *
      * @param index 要计算的相对索引值
      * @return 实际索引值
      */
@@ -76,7 +76,7 @@ public abstract class AbstractCircleQueue<E> {
     /**
      * 扩容队列底层数组
      * 当元素数量大于底层数组长度时，扩容到原来的1.5倍
-     * 
+     *
      * @param capacity 需要达到的最小容量
      */
     protected void expansion(int capacity) {
@@ -102,7 +102,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 检查是否需要扩容
-     * 
+     *
      * @param capacity 需要检查的容量
      * @return 如果当前容量足够则返回true
      */
@@ -138,7 +138,7 @@ public abstract class AbstractCircleQueue<E> {
 
     /**
      * 返回循环队列的字符串表示
-     * 
+     *
      * @return 循环队列的详细信息，包括头部信息、大小信息和元素列表
      */
     @Override
@@ -164,7 +164,8 @@ public abstract class AbstractCircleQueue<E> {
             if (i != 0) {
                 stringBuilder.append(", ");
             }
-            stringBuilder.append(elements[i] == null ? "null" : elements[i].toString());
+            stringBuilder.append(elements[i] == null ? "null" :
+                    elements[i].toString());
         }
         // 添加origin数组后的"]"
         stringBuilder.append("]");

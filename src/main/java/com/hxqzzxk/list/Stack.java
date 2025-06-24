@@ -3,6 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 栈数据结构接口
  * 定义栈的基本操作
+ *
  * @param <E> 元素类型
  */
 public interface Stack<E> {

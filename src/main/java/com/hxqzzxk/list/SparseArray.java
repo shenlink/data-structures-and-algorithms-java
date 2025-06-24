@@ -36,7 +36,7 @@ public class SparseArray {
 
     /**
      * 创建一个新的稀疏数组
-     * 
+     *
      * @param rows         行数
      * @param cols         列数
      * @param defaultValue 默认值
@@ -52,7 +52,7 @@ public class SparseArray {
 
     /**
      * 设置指定位置的值
-     * 
+     *
      * @param row   行索引
      * @param col   列索引
      * @param value 要设置的值
@@ -65,7 +65,7 @@ public class SparseArray {
 
     /**
      * 获取指定位置的值
-     * 
+     *
      * @param row 行索引
      * @param col 列索引
      * @return 指定位置的值
@@ -77,7 +77,7 @@ public class SparseArray {
 
     /**
      * 删除指定位置的值（设置为默认值）
-     * 
+     *
      * @param row 行索引
      * @param col 列索引
      */
@@ -98,7 +98,7 @@ public class SparseArray {
 
     /**
      * 获取当前存储的非默认值的数量
-     * 
+     *
      * @return 非默认值的数量
      */
     public int size() {
@@ -107,7 +107,7 @@ public class SparseArray {
 
     /**
      * 获取稀疏数组的默认值
-     * 
+     *
      * @return 默认值
      */
     public int getDefaultValue() {
@@ -116,7 +116,7 @@ public class SparseArray {
 
     /**
      * 检查指定位置是否存储了非默认值
-     * 
+     *
      * @param row 行索引
      * @param col 列索引
      * @return 如果存储了非默认值则返回 true
@@ -128,7 +128,7 @@ public class SparseArray {
 
     /**
      * 获取所有非默认值的键值对集合
-     * 
+     *
      * @return 所有非默认值的键值对集合
      */
     public Iterable<Entry> entrySet() {
@@ -145,7 +145,7 @@ public class SparseArray {
 
     /**
      * 将稀疏数组转换为三元组格式
-     * 
+     *
      * @return 三元组格式的二维数组
      */
     public int[][] toSparseArrayFormat() {
@@ -171,7 +171,7 @@ public class SparseArray {
 
     /**
      * 从三元组格式恢复稀疏数组
-     * 
+     *
      * @param sparseArray 三元组格式的二维数组
      */
     public void fromSparseArrayFormat(int[][] sparseArray) {
@@ -189,7 +189,7 @@ public class SparseArray {
 
     /**
      * 获取逻辑上的行数
-     * 
+     *
      * @return 逻辑上的行数
      */
     public int rows() {
@@ -198,7 +198,7 @@ public class SparseArray {
 
     /**
      * 获取逻辑上的列数
-     * 
+     *
      * @return 逻辑上的列数
      */
     public int cols() {
@@ -226,7 +226,7 @@ public class SparseArray {
 
         /**
          * 创建一个新的条目
-         * 
+         *
          * @param row   行索引
          * @param col   列索引
          * @param value 存储的值
@@ -239,7 +239,7 @@ public class SparseArray {
 
         /**
          * 获取行索引
-         * 
+         *
          * @return 行索引
          */
         public int getRow() {
@@ -248,7 +248,7 @@ public class SparseArray {
 
         /**
          * 获取列索引
-         * 
+         *
          * @return 列索引
          */
         public int getCol() {
@@ -257,7 +257,7 @@ public class SparseArray {
 
         /**
          * 获取存储的值
-         * 
+         *
          * @return 存储的值
          */
         public int getValue() {
@@ -267,7 +267,7 @@ public class SparseArray {
         /**
          * 重写 equals 方法，用于比较两个对象是否相等
          * 此方法重写了Object类的equals方法，目的是比较两个Entry对象的row、col和value属性是否完全相等
-         * 
+         *
          * @param o 被比较的对象
          * @return 如果两个对象相等则返回true，否则返回false
          */
@@ -290,7 +290,7 @@ public class SparseArray {
         /**
          * 重写hashCode方法，用于生成对象的哈希码
          * 这对于在哈希集合中（如HashMap, HashSet）使用对象作为键时尤为重要
-         * 
+         *
          * @return 对象的哈希码，由row, col和value的哈希值组成
          */
         @Override
@@ -300,7 +300,7 @@ public class SparseArray {
 
         /**
          * 返回稀疏数组的字符串表示
-         * 
+         *
          * @return 包含稀疏数组的行(row)、列(col)和值(value)信息的字符串
          */
         @Override
@@ -312,7 +312,7 @@ public class SparseArray {
 
     /**
      * 验证行和列索引
-     * 
+     *
      * @param row 行索引
      * @param col 列索引
      */
@@ -323,7 +323,7 @@ public class SparseArray {
 
     /**
      * 验证行索引
-     * 
+     *
      * @param row 行索引
      */
     private void validateRow(int row) {
@@ -334,7 +334,7 @@ public class SparseArray {
 
     /**
      * 验证列索引
-     * 
+     *
      * @param col 列索引
      */
     private void validateCol(int col) {

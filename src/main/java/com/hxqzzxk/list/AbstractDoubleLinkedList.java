@@ -3,7 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 抽象的双向链表实现
  * 提供了双向链表的基本操作
- * 
+ *
  * @param <E> 元素类型
  */
 public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
@@ -19,7 +19,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 链表节点类
-     * 
+     *
      * @param <E> 节点存储的元素类型
      */
     protected static class Node<E> {
@@ -40,7 +40,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
         /**
          * 创建一个新的链表节点
-         * 
+         *
          * @param prev    指向前一个节点的指针
          * @param element 节点存储的值
          * @param next    指向后一个节点的指针
@@ -55,7 +55,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
          * 返回表示当前节点的字符串
          * 此方法查看当前对象的前驱（prev）、当前元素（element）和后继（next），并将它们的字符串表示拼接起来
          * 如果前驱或后继节点为空，则在相应位置以 null 表示
-         * 
+         *
          * @return 返回包含前驱、当前元素和后继链表节点信息的字符串
          */
         @Override
@@ -88,7 +88,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 获取指定位置的元素
-     * 
+     *
      * @param index 要获取的元素位置，必须在 [0, size()) 范围内
      * @return 位于指定位置处的元素
      */
@@ -100,7 +100,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 替换指定位置的元素
-     * 
+     *
      * @param index   要替换的位置，必须在 [0, size()) 范围内
      * @param element 新元素
      * @return 被替换的旧元素
@@ -116,7 +116,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 查找指定元素第一次出现的位置
-     * 
+     *
      * @param element 要查找的元素
      * @return 元素首次出现的位置位置，如果未找到则返回 -1
      */
@@ -144,7 +144,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 根据位置获取对应的链表节点
-     * 
+     *
      * @param index 要获取的位置位置
      * @return 对应位置位置的链表节点
      */
@@ -172,7 +172,7 @@ public abstract class AbstractDoubleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 返回链表的字符串表示
-     * 
+     *
      * @return 链表的详细信息，包括头节点、尾节点、大小和所有元素
      */
     @Override

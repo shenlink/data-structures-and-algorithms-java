@@ -3,6 +3,7 @@ package com.hxqzzxk.list;
 /**
  * 抽象的单向链表实现
  * 提供了单向链表的基本操作
+ *
  * @param <E> 元素类型
  */
 public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
@@ -13,6 +14,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 链表节点类
+     *
      * @param <E> 节点存储的元素类型
      */
     protected static class Node<E> {
@@ -20,7 +22,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
          * 节点存储的元素
          */
         E element;
-        
+
         /**
          * 指向下一个节点的指针
          */
@@ -28,7 +30,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
         /**
          * 创建一个新的节点
-         * 
+         *
          * @param element 节点存储的元素
          * @param next    指向下一个节点的指针
          */
@@ -39,6 +41,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
         /**
          * 返回表示当前节点的字符串
+         *
          * @return String 表示当前节点的字符串，格式为"(element, next.element)"
          */
         @Override
@@ -71,7 +74,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 获取指定索引的元素
-     * 
+     *
      * @param index 要获取的元素位置，必须在 [0, size()) 范围内
      * @return 位于指定索引处的元素
      */
@@ -83,7 +86,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 替换指定位置的元素
-     * 
+     *
      * @param index   要替换的位置，必须在 [0, size()) 范围内
      * @param element 新元素
      * @return 被替换的旧元素
@@ -99,7 +102,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 查找指定元素第一次出现的位置
-     * 
+     *
      * @param element 要查找的元素
      * @return 元素首次出现的索引位置，如果未找到则返回 -1
      */
@@ -127,7 +130,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 根据索引获取对应的链表节点
-     * 
+     *
      * @param index 要获取的索引位置
      * @return 对应索引位置的链表节点
      */
@@ -144,7 +147,7 @@ public abstract class AbstractSingleLinkedList<E> extends AbstractList<E> {
 
     /**
      * 返回链表的字符串表示
-     * 
+     *
      * @return 链表的字符串表示
      */
     @Override

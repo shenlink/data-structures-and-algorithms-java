@@ -8,7 +8,7 @@ package com.hxqzzxk.sort;
 public class CountingSort extends Sort<Integer> {
     /**
      * 对数组进行计数排序。
-     * 
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 找出数组中的最小值和最大值以确定值范围；
      * 2. 创建计数数组并统计每个元素出现的次数；

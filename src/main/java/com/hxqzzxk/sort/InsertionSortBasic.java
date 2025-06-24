@@ -9,7 +9,7 @@ package com.hxqzzxk.sort;
 public class InsertionSortBasic<E extends Comparable<E>> extends Sort<E> {
     /**
      * 执行插入排序的具体逻辑。
-     * 
+     * <p>
      * 排序过程：
      * - 循环 n - 1 轮，每轮将当前元素插入到前面已经排序的元素中的合适位置；
      * - 从当前元素开始往前找，如果当前元素比前一个元素小，则交换位置；

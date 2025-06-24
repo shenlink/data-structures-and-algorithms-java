@@ -2,6 +2,7 @@ package com.hxqzzxk.list;
 
 /**
  * 双端队列实现类，使用双向链表作为底层实现
+ *
  * @param <E> 队列中元素的类型
  */
 public class Deque<E> {
@@ -12,7 +13,7 @@ public class Deque<E> {
 
     /**
      * 将元素添加到队尾
-     * 
+     *
      * @param element 要添加的元素
      */
     public void enQueueRear(E element) {
@@ -21,7 +22,7 @@ public class Deque<E> {
 
     /**
      * 移除并返回队头元素
-     * 
+     *
      * @return 队头元素
      */
     public E deQueueFront() {
@@ -30,7 +31,7 @@ public class Deque<E> {
 
     /**
      * 将元素添加到队头
-     * 
+     *
      * @param element 要添加的元素
      */
     public void enQueueFront(E element) {
@@ -39,7 +40,7 @@ public class Deque<E> {
 
     /**
      * 移除并返回队尾元素
-     * 
+     *
      * @return 队尾元素
      */
     public E deQueueRear() {
@@ -48,7 +49,7 @@ public class Deque<E> {
 
     /**
      * 获取但不移除队头元素
-     * 
+     *
      * @return 队头元素
      */
     public E front() {
@@ -57,7 +58,7 @@ public class Deque<E> {
 
     /**
      * 获取但不移除队尾元素
-     * 
+     *
      * @return 队尾元素
      */
     public E rear() {
@@ -73,7 +74,7 @@ public class Deque<E> {
 
     /**
      * 返回队列中的元素数量
-     * 
+     *
      * @return 队列中的元素数量
      */
     public int size() {
@@ -82,7 +83,7 @@ public class Deque<E> {
 
     /**
      * 判断队列是否为空
-     * 
+     *
      * @return 如果队列为空则返回true
      */
     public boolean isEmpty() {

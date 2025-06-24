@@ -14,7 +14,7 @@ public class BucketSort extends Sort<Integer> {
 
     /**
      * 对数组进行桶排序。
-     * 
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 确定数组非空；
      * 2. 找出最大值用于归一化处理；
@@ -22,17 +22,21 @@ public class BucketSort extends Sort<Integer> {
      * 4. 对每个桶进行排序；
      * 5. 合并所有桶的元素回原数组。
      */
-      @Override  public void sort() {
+    @Override
+    public void sort() {
         // 确保数组非空
-        if (elements == null || elements.length == 0) return;
+        if (elements == null || elements.length == 0)
+            return;
 
         int n = elements.length;
 
         // 找到最大值以便归一化
         int max = Integer.MIN_VALUE;
         for (Integer element : elements) {
-            if (element == null) continue;
-            if (element > max) max = element;
+            if (element == null)
+                continue;
+            if (element > max)
+                max = element;
         }
 
         // 创建桶数组，每个桶用 LinkedList 存储
@@ -43,7 +47,8 @@ public class BucketSort extends Sort<Integer> {
 
         // 将元素分配到对应桶中
         for (Integer element : elements) {
-            if (element == null) continue;
+            if (element == null)
+                continue;
             int bucketIndex = (int) ((double) element / (max + 1) * n); // 归一化处理
             buckets.get(bucketIndex).add(element);
         }

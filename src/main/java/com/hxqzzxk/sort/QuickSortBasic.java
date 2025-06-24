@@ -17,7 +17,7 @@ public class QuickSortBasic<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对指定范围内的数组进行快速排序。
-     *
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 如果当前范围小于两个元素，无需排序；
      * 2. 随机选择一个基准元素，并将其交换到起始位置；
@@ -39,7 +39,7 @@ public class QuickSortBasic<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 将指定范围内的数组按照基准元素进行划分。
-     *
+     * <p>
      * 划分过程分为以下几个步骤：
      * 1. 随机化选择基准元素并将其交换到起始位置，防止退化成 O(n^2)；
      * 2. 初始化指针 j 指向起始位置；

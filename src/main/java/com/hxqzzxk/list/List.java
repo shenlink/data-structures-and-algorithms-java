@@ -12,21 +12,21 @@ public interface List<E> {
 
     /**
      * 返回当前元素的数量。
-     * 
+     *
      * @return 元素个数
      */
     int size();
 
     /**
      * 检查线性表是否为空。
-     * 
+     *
      * @return 如果线性表没有元素则返回 true
      */
     boolean isEmpty();
 
     /**
      * 判断线性表中是否包含指定元素。
-     * 
+     *
      * @param element 要查找的元素
      * @return 如果找到元素则返回 true
      */
@@ -34,14 +34,14 @@ public interface List<E> {
 
     /**
      * 将元素添加到线性表尾部。
-     * 
+     *
      * @param element 要添加的元素
      */
     void add(E element);
 
     /**
      * 获取指定位置的元素。
-     * 
+     *
      * @param index 要获取的元素位置，必须在 [0, size()) 范围内
      * @return 位于指定索引处的元素
      */
@@ -49,7 +49,7 @@ public interface List<E> {
 
     /**
      * 替换指定位置的元素。
-     * 
+     *
      * @param index   要替换的位置，必须在 [0, size()) 范围内
      * @param element 新元素
      * @return 被替换的旧元素
@@ -58,7 +58,7 @@ public interface List<E> {
 
     /**
      * 在指定位置插入一个元素。
-     * 
+     *
      * @param index   插入位置，必须在 [0, size()] 范围内
      * @param element 要插入的元素
      */
@@ -66,7 +66,7 @@ public interface List<E> {
 
     /**
      * 删除指定位置的元素。
-     * 
+     *
      * @param index 要删除的位置，必须在 [0, size()) 范围内
      * @return 被删除的元素
      */
@@ -74,7 +74,7 @@ public interface List<E> {
 
     /**
      * 查找指定元素第一次出现的位置。
-     * 
+     *
      * @param element 要查找的元素
      * @return 元素首次出现的索引位置，如果未找到则返回 -1
      */

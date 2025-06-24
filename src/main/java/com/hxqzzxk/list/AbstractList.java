@@ -16,7 +16,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 返回当前元素的数量
-     * 
+     *
      * @return 元素个数
      */
     public int size() {
@@ -25,7 +25,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 检查线性表是否为空
-     * 
+     *
      * @return 如果线性表没有元素则返回 true
      */
     public boolean isEmpty() {
@@ -34,7 +34,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 判断线性表中是否包含指定元素
-     * 
+     *
      * @param element 要查找的元素
      * @return 如果找到元素则返回 true
      */
@@ -44,7 +44,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 将元素添加到线性表尾部
-     * 
+     *
      * @param element 要添加的元素
      */
     public void add(E element) {
@@ -53,7 +53,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 确认索引没有越界
-     * 
+     *
      * @param index 要检查的索引位置
      */
     protected void checkIndex(int index) {
@@ -64,7 +64,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 针对添加操作，确认索引没有越界，添加操作可以在线性表的最后位置添加元素
-     * 
+     *
      * @param index 要检查的索引位置
      */
     protected void checkIndexForAdd(int index) {
@@ -75,7 +75,7 @@ public abstract class AbstractList<E> implements List<E> {
 
     /**
      * 抛出索引越界异常
-     * 
+     *
      * @param index 请求访问的位置
      */
     protected void outOfBounds(int index) {

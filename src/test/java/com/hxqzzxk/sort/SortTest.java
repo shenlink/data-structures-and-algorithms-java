@@ -56,7 +56,7 @@ public abstract class SortTest {
 
     /**
      * 辅助方法验证数组是否已排序
-     * 
+     *
      * @return 如果数组有序返回 true，否则返回 false
      */
     protected boolean isSorted() {

@@ -18,7 +18,7 @@ public class QuickSort3Way<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对指定范围内的数组进行3路快速排序。
-     *
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 如果起始索引大于等于结束索引，则无需排序，直接返回；
      * 2. 随机选择一个基准元素，并将其交换到起始位置；

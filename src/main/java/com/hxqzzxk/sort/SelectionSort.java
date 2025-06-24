@@ -7,12 +7,12 @@ package com.hxqzzxk.sort;
 public class SelectionSort<E extends Comparable<E>> extends Sort<E> {
     /**
      * 执行选择排序的具体逻辑。
-     * 
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 控制每轮比较的结束位置，初始为数组最后一个索引，之后每次减少一个索引；
      * 2. 每轮找出当前未排序部分的最大元素并将其放置在正确位置；
      * 3. 使用 maxIndex 变量记录最大元素的位置，通过交换操作完成排序。
-     * 
+     *
      * @param begin 起始索引，用于确定每一轮比较的起始位置
      * @param end   结束索引，用于确定每一轮比较的结束位置
      */

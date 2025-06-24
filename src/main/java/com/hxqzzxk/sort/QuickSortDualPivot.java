@@ -16,7 +16,7 @@ public class QuickSortDualPivot<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 对指定范围内的数组进行快速排序。
-     *
+     * <p>
      * 排序过程分为以下几个步骤：
      * 1. 如果当前范围小于两个元素，无需排序；
      * 2. 使用 partition 方法将数组划分为两个子数组；
@@ -36,7 +36,7 @@ public class QuickSortDualPivot<E extends Comparable<E>> extends Sort<E> {
 
     /**
      * 将指定范围内的数组按照基准元素进行划分。
-     *
+     * <p>
      * 划分过程分为以下几个步骤：
      * 1. 随机选择一个基准元素，并将其交换到起始位置；
      * 2. 定义两个指针 l 和 r，分别从左右两侧向中间扫描；

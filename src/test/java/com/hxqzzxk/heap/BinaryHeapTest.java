@@ -13,7 +13,7 @@ public class BinaryHeapTest {
      * 最大堆实例，用于测试最大堆功能
      */
     private BinaryHeap<Integer> maxHeap;
-    
+
     /**
      * 最小堆实例，用于测试最小堆功能
      */

@@ -11,7 +11,7 @@ public abstract class AbstractHeap<E> implements Heap<E> {
      * 堆里面元素的个数
      */
     protected int size;
-    
+
     /**
      * 比较器
      */
