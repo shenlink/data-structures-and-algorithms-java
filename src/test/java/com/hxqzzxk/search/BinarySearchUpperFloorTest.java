@@ -9,8 +9,8 @@ public class BinarySearchUpperFloorTest extends BinarySearchTest {
      */
     @Override
     public void setUp() {
-        binarySearch = new BinarySearchUpper<>();
+        binarySearch = new BinarySearchUpperFloor<>();
         elements = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        results = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        results = new Integer[]{-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     }
 }
