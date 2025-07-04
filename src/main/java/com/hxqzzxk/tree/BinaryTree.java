@@ -150,6 +150,8 @@ public class BinaryTree<E> {
      * 一路返回，持续访问根节点的左子树的右侧的节点。一路返回到了根节点的右子节点时，
      * 压入左子结点和右子节点，重复循环
      * 从上面可以看出来，这是一个重复的操作
+     * 
+     * @param visitor 访问器
      */
     public void preOrderNR(Visitor<E> visitor) {
         // 根节点是null，树没有节点，直接返回
@@ -178,6 +180,8 @@ public class BinaryTree<E> {
     /**
      * 前序遍历的第2种非递归实现
      * 这个的思路与上一个方法的preOrderNR的思路类似
+     * 
+     * @param visitor 访问器
      */
     public void preOrderNR2(Visitor<E> visitor) {
         // 根节点是null，树没有节点，直接返回
@@ -217,6 +221,8 @@ public class BinaryTree<E> {
 
     /**
      * 前序遍历
+     * 
+     * @param visitor 访问器
      */
     public void preOrder(Visitor<E> visitor) {
         if (visitor == null) {
@@ -255,7 +261,8 @@ public class BinaryTree<E> {
      * 因为递归是上一层问题的解是依赖下一层的问题的解的，所以，递归回溯的
      * 过程中，问题从小到大，依次得到了解决
      *
-     * @param node 要遍历的起始节点
+     * @param node    要遍历的起始节点
+     * @param visitor 访问器
      */
     protected void preOrder(Node<E> node, Visitor<E> visitor) {
         // 如果节点为空，则返回，不再继续遍历
@@ -280,6 +287,8 @@ public class BinaryTree<E> {
      * 这个节点就是中序遍历的第二个节点，然后node = node.right，此时，
      * 会入栈这个节点，在下一轮节点访问，这样，句访问完了中序遍历的第一个，
      * 第二个和第三个节点，之后，就是循环操作了
+     * 
+     * @param visitor 访问器
      */
     public void inOrderNR(Visitor<E> visitor) {
         // 如果根节点为空，则直接返回
@@ -316,6 +325,8 @@ public class BinaryTree<E> {
 
     /**
      * 中序遍历
+     * 
+     * @param visitor 访问器
      */
     public void inOrder(Visitor<E> visitor) {
         if (visitor == null) {
@@ -329,6 +340,7 @@ public class BinaryTree<E> {
      * 同前序遍历preOrder，不再赘述
      *
      * @param node 要遍历的起始节点
+     * @param visitor 访问器
      */
     protected void inOrder(Node<E> node, Visitor<E> visitor) {
         // 如果根节点为空，则直接返回
@@ -350,6 +362,8 @@ public class BinaryTree<E> {
      * 利用指针 prev 记录上一个访问的节点，用于判断当前节点是否可以访问。
      * 当栈顶节点是叶子节点或其子节点已被访问过时，才访问该节点。
      * 否则，先将右子节点入栈，再将左子节点入栈，以保证左子节点先被处理。
+     * 
+     * @param visitor 访问器
      */
     public void postOrderNR(Visitor<E> visitor) {
         // 如果根节点为空，则直接返回
@@ -392,6 +406,7 @@ public class BinaryTree<E> {
 
     /**
      * 后序遍历
+     * @param visitor 访问器
      */
     public void postOrder(Visitor<E> visitor) {
         if (visitor == null) {
@@ -405,6 +420,7 @@ public class BinaryTree<E> {
      * 同前序遍历preOrder，不再赘述
      *
      * @param node 要遍历的起始节点
+     * @param visitor 访问器
      */
     protected void postOrder(Node<E> node, Visitor<E> visitor) {
         // 根节点是null，树没有节点，直接返回
@@ -422,6 +438,8 @@ public class BinaryTree<E> {
 
     /**
      * 层序遍历
+     * 
+     * @param visitor 访问器
      */
     public void levelOrder(Visitor<E> visitor) {
         // 根节点是null，树没有节点，直接返回
