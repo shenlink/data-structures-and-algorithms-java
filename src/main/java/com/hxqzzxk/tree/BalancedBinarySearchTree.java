@@ -3,10 +3,10 @@ package com.hxqzzxk.tree;
 /**
  * 平衡二叉搜索树实现。
  * 提供左旋和右旋操作以维持树的平衡，并修复旋转后的节点关系。
- *
+ * <p>
  * 该类基于BinarySearchTree实现，通过旋转操作保持树的平衡性，
  * 适用于AVL树、红黑树等需要平衡操作的场景.
- * 
+ *
  * @param <E> 元素类型，必须是可比较的
  */
 @SuppressWarnings("rawtypes")

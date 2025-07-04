@@ -339,7 +339,7 @@ public class BinaryTree<E> {
      * 中序遍历的递归方法
      * 同前序遍历preOrder，不再赘述
      *
-     * @param node 要遍历的起始节点
+     * @param node    要遍历的起始节点
      * @param visitor 访问器
      */
     protected void inOrder(Node<E> node, Visitor<E> visitor) {
@@ -406,6 +406,7 @@ public class BinaryTree<E> {
 
     /**
      * 后序遍历
+     * 
      * @param visitor 访问器
      */
     public void postOrder(Visitor<E> visitor) {
@@ -419,7 +420,7 @@ public class BinaryTree<E> {
      * 后序遍历的递归方法
      * 同前序遍历preOrder，不再赘述
      *
-     * @param node 要遍历的起始节点
+     * @param node    要遍历的起始节点
      * @param visitor 访问器
      */
     protected void postOrder(Node<E> node, Visitor<E> visitor) {

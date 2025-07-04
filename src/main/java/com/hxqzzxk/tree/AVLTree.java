@@ -4,7 +4,7 @@ package com.hxqzzxk.tree;
  * AVL树实现类
  * 每次插入或删除节点后，都会检查并修复树的平衡性，以确保查找、插入和删除的时间复杂度为 O(log n)。
  * 通过四种旋转操作（LL、LR、RR、RL）维持树的平衡
- * 
+ *
  * @param <E> 元素类型，必须是可比较的
  */
 @SuppressWarnings("rawtypes")
@@ -21,7 +21,7 @@ public class AVLTree<E extends Comparable> extends BalancedBinarySearchTree<E> {
 
         /**
          * 创建一个 AVLNode 节点
-         * 
+         *
          * @param element 节点元素
          * @param parent  节点的父节点
          */

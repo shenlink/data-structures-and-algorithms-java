@@ -51,7 +51,7 @@ public class RedBlackTreeTest {
                 "2: 0 3 \n" +
                 "3: null null 2 4 ", tree.toString());
         tree.clear();
-        Integer[] data = new Integer[] { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = new Integer[]{10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -94,7 +94,7 @@ public class RedBlackTreeTest {
         tree.remove(10);
         // 删除度为0的节点
         tree.clear();
-        Integer[] data = new Integer[] { 10, 5, 15 };
+        Integer[] data = new Integer[]{10, 5, 15};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -116,7 +116,7 @@ public class RedBlackTreeTest {
                 "2: null 15 ", tree.toString());
 
         tree.clear();
-        data = new Integer[] { 7, 4, 9, 2, 5 };
+        data = new Integer[]{7, 4, 9, 2, 5};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -129,7 +129,7 @@ public class RedBlackTreeTest {
 
         // 删除度为1的节点
         tree.clear();
-        data = new Integer[] { 10, 5, 15, 3, 16 };
+        data = new Integer[]{10, 5, 15, 3, 16};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -151,7 +151,7 @@ public class RedBlackTreeTest {
 
         // 删除度为2的节点
         tree.clear();
-        data = new Integer[] { 10, 5, 15, 3, 7, 12, 18 };
+        data = new Integer[]{10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }

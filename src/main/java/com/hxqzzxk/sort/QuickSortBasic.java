@@ -4,7 +4,7 @@ package com.hxqzzxk.sort;
  * 快速排序实现类
  * 基于分治策略进行排序，通过选定基准元素将数组划分为两个子数组，分别进行递归排序。
  * 时间复杂度平均为 O(n log n)，最差情况下为 O(n^2)，空间复杂度为 O(log n)。
- * 
+ *
  * @param <E> 元素类型，必须实现 Comparable 接口
  */
 public class QuickSortBasic<E extends Comparable<E>> extends Sort<E> {

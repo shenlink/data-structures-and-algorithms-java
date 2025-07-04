@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.hxqzzxk.tree.BinaryTree.Visitor;
 
 /**
@@ -58,7 +59,7 @@ public class BinarySearchTreeTest {
                 "5: null null null null null null null null null " +
                 "null null null null null null 4 ", tree.toString());
         tree.clear();
-        Integer[] data = new Integer[] { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = new Integer[]{10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -87,7 +88,7 @@ public class BinarySearchTreeTest {
         tree.remove(10);
         // 删除度为0的节点
         tree.clear();
-        Integer[] data = new Integer[] { 10, 5, 15 };
+        Integer[] data = new Integer[]{10, 5, 15};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -109,7 +110,7 @@ public class BinarySearchTreeTest {
                 "2: null 15 ", tree.toString());
 
         tree.clear();
-        data = new Integer[] { 7, 4, 9, 2, 5 };
+        data = new Integer[]{7, 4, 9, 2, 5};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -122,7 +123,7 @@ public class BinarySearchTreeTest {
 
         // 删除度为1的节点
         tree.clear();
-        data = new Integer[] { 10, 5, 15, 3, 16 };
+        data = new Integer[]{10, 5, 15, 3, 16};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -144,7 +145,7 @@ public class BinarySearchTreeTest {
 
         // 删除度为2的节点
         tree.clear();
-        data = new Integer[] { 10, 5, 15, 3, 7, 12, 18 };
+        data = new Integer[]{10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -195,7 +196,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testPreOrderNR() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -215,7 +216,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testPreOrderNR2() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -235,7 +236,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testPreOrder() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -255,7 +256,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testInOrderNR() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -275,7 +276,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testInOrder() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -295,7 +296,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testPostOrderNR() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -315,7 +316,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testPostOrderTraversal() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -336,7 +337,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testLevelOrder() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -357,7 +358,7 @@ public class BinarySearchTreeTest {
     @Test
     public void testIsComplete() {
         Assert.assertFalse(tree.isComplete());
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -365,7 +366,7 @@ public class BinarySearchTreeTest {
         tree.remove(5);
         Assert.assertFalse(tree.isComplete());
         tree.clear();
-        data = new Integer[] { 10, 5, 15, 3, 7 };
+        data = new Integer[]{10, 5, 15, 3, 7};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -379,7 +380,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testHeight() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -391,7 +392,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testHeightR() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -403,7 +404,7 @@ public class BinarySearchTreeTest {
      */
     @Test
     public void testClear() {
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
@@ -426,22 +427,22 @@ public class BinarySearchTreeTest {
         tree.add(5);
         tree.add(6);
         Assert.assertEquals("size: 6, height: 5\n" +
-                "1: 2 \n" +
-                "2: 1 3 \n" +
-                "3: null null null 4 \n" +
-                "4: null null null null null null null 5 \n" +
-                "5: null null null null null null null null " +
-                "null null null null null null null 6 ",
+                        "1: 2 \n" +
+                        "2: 1 3 \n" +
+                        "3: null null null 4 \n" +
+                        "4: null null null null null null null 5 \n" +
+                        "5: null null null null null null null null " +
+                        "null null null null null null null 6 ",
                 tree.toString());
         tree.clear();
-        Integer[] data = { 10, 5, 15, 3, 7, 12, 18 };
+        Integer[] data = {10, 5, 15, 3, 7, 12, 18};
         for (Integer value : data) {
             tree.add(value);
         }
         Assert.assertEquals("size: 7, height: 3\n" +
-                "1: 10 \n" +
-                "2: 5 15 \n" +
-                "3: 3 7 12 18 ",
+                        "1: 10 \n" +
+                        "2: 5 15 \n" +
+                        "3: 3 7 12 18 ",
                 tree.toString());
     }
 }
