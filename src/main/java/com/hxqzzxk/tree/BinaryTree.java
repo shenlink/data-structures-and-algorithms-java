@@ -125,7 +125,7 @@ public class BinaryTree<E> {
          * @param element 要访问的元素
          * @return 返回 true 停止遍历，返回 false 则继续遍历
          */
-        abstract boolean visit(E element);
+        public abstract boolean visit(E element);
     }
 
     /**
